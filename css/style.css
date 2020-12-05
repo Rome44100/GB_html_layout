@@ -144,6 +144,11 @@ a {
     padding: 14px 38px;
     margin-top: 48px;
 }
+.button a:hover {
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    color: #fff;
+}
 .mp_list {
     margin-top: 48px;
     display: flex;
