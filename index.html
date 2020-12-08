@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <title>My shop</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
 </head>
 <body>
 <div>
@@ -16,45 +17,49 @@
                 </div>
                 <div class="search_wrap">
                     <form action="/" method="GET">
-                        <button type="submit">
+                        <div id="search_display" title="Press ME!">
                             <img src="img/search.svg" alt="Search">
-                        </button>
-                        <input type="text" name="s">
+                        </div>
+                        <div id="search_elems">
+                            <input class="text_field" type="text" name="s" required placeholder="Enter your question">
+                            <input class="submit_button" type="submit" value="Go!">
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="top_rigth_items">
                 <div class="menu_wrap">
-                    <img src="img/menu.svg" alt="menu">
-                    <nav>
+                    <img class="button_menu" src="img/menu.svg" alt="menu">
+                    <nav class="main_menu">
                         <div>Menu</div>
+                        <span class="close_menu"></span>
                         <ul>
-                            <li>Man
+                            <li><a href="#0">Man</a>
                                 <ul>
-                                    <li>Accessories</li>
-                                    <li>Bags</li>
-                                    <li>Denim</li>
-                                    <li>T-shirts</li>
+                                    <li><a href="#0">Accessories</a></li>
+                                    <li><a href="#0">Bags</a></li>
+                                    <li><a href="#0">Denim</a></li>
+                                    <li><a href="#0">T-shirts</a></li>
                                 </ul>
                             </li>
                             <li>
-                                Woman
+                                <a href="#0">Woman</a>
                                 <ul>
-                                    <li>Accessories</li>
-                                    <li>Jackets & Coats</li>
-                                    <li>Polos</li>
-                                    <li>T-shirts</li>
-                                    <li>Shirts</li>
+                                    <li><a href="#0">Accessories</a></li>
+                                    <li><a href="#0">Jackets & Coats</a></li>
+                                    <li><a href="#0">Polos</a></li>
+                                    <li><a href="#0">T-shirts</a></li>
+                                    <li><a href="#0">Shirts</a></li>
                                 </ul>
                             </li>
-                            <li>Kids
+                            <li><a href="#0">Kids</a>
                                 <ul>
-                                    <li>Accessories</li>
-                                    <li>Jackets & Coats</li>
-                                    <li>Polos</li>
-                                    <li>T-shirts</li>
-                                    <li>Shirts</li>
-                                    <li>Bags</li>
+                                    <li><a href="#0">Accessories</a></li>
+                                    <li><a href="#0">Jackets & Coats</a></li>
+                                    <li><a href="#0">Polos</a></li>
+                                    <li><a href="#0">T-shirts</a></li>
+                                    <li><a href="#0">Shirts</a></li>
+                                    <li><a href="#0">Bags</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -96,6 +101,7 @@
                     <p>OF LUXERIOUS <span>FASHION</span></p>
                 </div>
             </div>
+            <div class="banner_bg center"></div>
         </div>
         <div class="offers center">
             <div class="numerous_offers">
@@ -146,22 +152,26 @@
                     <h4>ELLERY X M'O capsule</h4>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <div><span>$</span>52.00</div>
-                </section><section>
+                </section>
+                <section>
                     <img src="img/goods_3.png" alt="ELLERY X M'O capsule">
                     <h4>ELLERY X M'O capsule</h4>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <div><span>$</span>52.00</div>
-                </section><section>
+                </section>
+                <section>
                     <img src="img/goods_4.png" alt="ELLERY X M'O capsule">
                     <h4>ELLERY X M'O capsule</h4>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <div><span>$</span>52.00</div>
-                </section><section>
+                </section>
+                <section>
                     <img src="img/goods_5.png" alt="ELLERY X M'O capsule">
                     <h4>ELLERY X M'O capsule</h4>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <div><span>$</span>52.00</div>
-                </section><section>
+                </section>
+                <section>
                     <img src="img/goods_6.png" alt="ELLERY X M'O capsule">
                     <h4>ELLERY X M'O capsule</h4>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -200,8 +210,8 @@
                 <h3>Subscribe</h3>
                 <p>FOR OUR NEWLETTER AND PROMOTION</p>
                 <form action="/" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email">
-                    <input type="submit" value="Subscribe">
+                    <input class="text_field" type="email" name="email" placeholder="Enter your email" required>
+                    <input class="submit_button" type="submit" value="Subscribe">
                 </form>
             </div>
         </div>
