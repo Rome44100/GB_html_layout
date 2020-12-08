@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
-body {
+body, input {
     background-color: #fff;
     font-family: Lato, sans-serif;
 }
@@ -14,6 +15,21 @@ a {
 .center {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
+}
+.globe_button {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    display: inline-block;
+    border: 1px solid #FF6A6A;
+    padding: 14px 38px;
+    margin-top: 48px;
+    transition: all .3s;
+}
+.globe_button:hover {
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    color: #fff;
 }
 /* / PRESET */
 
@@ -26,11 +42,6 @@ a {
     align-items: center;
     gap: 41px;
 }
-/** скроем пока "ненужные" блоки **/
-.access_form_wrap {
-    display: none;
-}
-/** // "ненужные" блоки **/
 .top_left_items, .top_rigth_items {
     display: flex;
     gap: 41px;
@@ -80,20 +91,6 @@ a {
 .button_menu {
     cursor: pointer;
 }
-/*.bg_main_menu {
-    background-color: #00000055;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 75px;
-    z-index: 5;
-    display: flex;
-    justify-content: flex-end;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 1s;
-}
-*/
 .main_menu {
     display: block;
     background-color: #fff;
@@ -129,6 +126,39 @@ a {
 }
 .main_menu ul li ul a {
     color: #6F6E6E;
+}
+.header__account {
+    cursor: pointer;
+}
+.cabinet_wrap {
+    position: relative;
+}
+.access_form_wrap {
+    display: block;
+    position: absolute;
+    right: -77px;
+    background-color: #fff;
+    top: 54px;
+    z-index: 10;
+    padding: 30px;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+.access_form_wrap input[type="text"], 
+.access_form_wrap input[type="password"] {
+    border: 1px solid #FF6A6A;
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+}
+.access_form_wrap input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+}
+.register {
+    margin: 20px 0 0;
 }
 /* / HEADER */
 
@@ -230,39 +260,54 @@ a {
     line-height: 17px;
     color: #9F9F9F;
 }
-.button a {
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    display: inline-block;
-    border: 1px solid #FF6A6A;
-    padding: 14px 38px;
-    margin-top: 48px;
-}
-.button a:hover {
-    background: #F16D7F;
-    border: 1px solid #FF6A6A;
-    color: #fff;
-}
 .mp_list {
     margin-top: 48px;
     display: flex;
     gap: 30px;
-    width: 1140px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .mp_list section {
     max-width: 360px;
     background-color: #F8F8F8;
     text-align: left;
 }
-.mp_list h4, .mp_list p, .mp_list div {
+.img_wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product img {
+    filter: brightness(100%);
+    transition: filter 1s;
+}
+.product:hover img {
+    filter: brightness(50%);
+}
+.bg_cart {
+    position: absolute;
+    border: solid 1px #fff;
+    padding: 8px 26px;
+    color: #fff;
+    display: none;
+}
+.img_wrap:hover .bg_cart {
+    display: block;
+}
+.bg_cart:hover {
+    box-shadow: 0 0 5px #fff;
+}
+.mp_list h4, .mp_list p {
     padding: 0 14px;
 }
 .mp_list h4 {
     margin-top: 25px;
     font-size: 13px;
     line-height: 16px;
+    color: #000000;
+}
+.mp_list h4 a {
     color: #000000;
 }
 .mp_list p {
@@ -272,12 +317,13 @@ a {
     line-height: 17px;
     color: #5D5D5D;
 }
-.mp_list div {
+.product_price {
     margin-top: 18px;
     margin-bottom: 20px;
     color: #F16D7F;
     font-size: 16px;
     line-height: 19px;
+    padding: 0 14px;
 }
 /** FOOOOTER **/
 .foot_services {
@@ -308,7 +354,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../img/subscribe_bg.svg");
+    background-image: url("../img/subscribe_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 448px;
@@ -338,9 +384,14 @@ a {
 }
 .subscribe_form input[type="email"] {
     width: 260px;
+    padding-right: 16px;
 }
 .subscribe_form input[type="submit"] {
     width: 100px;
+    transition: background-color 1s;
+}
+.subscribe_form input[type="submit"]:hover {
+    background-color: #E05C6E;
 }
 /** FOOT BAR **/
 .foot_bar {
@@ -364,17 +415,18 @@ a {
     width: 31px;
     height: 32px;
     background-color: #fff;
-    background-repeat: no-repeat;
+    transition: background-color .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.facebook {
-    background-image: url('../img/facebook.png');
+.social a:hover {
+    background-color: #F16D7F;
 }
-.instagram {
-    background-image: url('../img/instagram.png');
+.social a:hover img {
+    filter: invert(0%);
+    transition: filter .5s;
 }
-.pinterest {
-    background-image: url('../img/pinterest.png');
-}
-.twitter {
-    background-image: url('../img/twitter.png');
+.social a:hover img {
+    filter: invert(100%);
 }
