@@ -8,15 +8,19 @@ function ShowElems(ElemClick_selector, HiddenBlock_selector, opacity) {
                 'visible' == document.querySelector('.access_form_wrap').style.visibility) {
                 document.querySelector('.access_form_wrap').style.opacity = 0;
                 document.querySelector('.access_form_wrap').style.visibility = 'hidden';
-                document.querySelector('.banner_bg').style.opacity = 0;
-                document.querySelector('.banner_bg').style.visibility = 'hidden';
+                if(null != document.querySelector('.banner_bg')) {
+                    document.querySelector('.banner_bg').style.opacity = 0;
+                    document.querySelector('.banner_bg').style.visibility = 'hidden';
+                }
             }
             if('.header__account' == ElemClick_selector && 
                 'visible' == document.querySelector('.main_menu').style.visibility) {
                 document.querySelector('.main_menu').style.opacity = 0;
                 document.querySelector('.main_menu').style.visibility = 'hidden';
-                document.querySelector('.banner_bg').style.opacity = 0;
-                document.querySelector('.banner_bg').style.visibility = 'hidden';
+                if(null != document.querySelector('.banner_bg')) {
+                    document.querySelector('.banner_bg').style.opacity = 0;
+                    document.querySelector('.banner_bg').style.visibility = 'hidden';
+                }
             }
         } else {
             _elem.style.opacity = 0;
@@ -24,10 +28,3 @@ function ShowElems(ElemClick_selector, HiddenBlock_selector, opacity) {
         }
     });
 }
-window.addEventListener('load', function() {
-    ShowElems('#search_display', '#search_elems', 1);
-    ShowElems('.button_menu', '.main_menu', 1);
-    ShowElems('.button_menu', '.banner_bg', 1);
-    ShowElems('.header__account', '.access_form_wrap', 1);
-    ShowElems('.header__account', '.banner_bg', 1);
-});
