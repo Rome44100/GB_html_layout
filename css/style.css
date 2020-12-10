@@ -43,6 +43,13 @@ a {
     border: 1px solid #FF6A6A;
     color: #fff;
 }
+summary::marker, summary::-webkit-details-marker {
+    display: none;
+    list-style: none;
+}
+summary {
+    list-style: none;
+}
 /***** / PRESET *****/
 
 /***** HEADER ******/
@@ -368,6 +375,7 @@ a {
     align-items: center;
     background-image: url("../img/subscribe_bg.jpg");
     background-size: cover;
+    background-position: center bottom;
     height: 448px;
 }
 .feedback, .subscribe_form {
@@ -463,6 +471,9 @@ a {
     font-weight: 300;
     color: #636363;
     text-transform: uppercase;
+}
+.ptm_navig a:hover {
+    color: var(--color-pink);
 }
 .last_chunk {
     text-transform: uppercase;
@@ -586,4 +597,82 @@ a {
 }
 .active {
     color: var(--color-pink);
+}
+
+/****** PRODUCT *******/
+.detail_page {
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    position: relative;
+    top: -64px;
+    background-color: #fff;
+}
+.detail_page h3 {
+    color: var(--color-pink);
+    margin-top: 64px;
+    text-transform: uppercase;
+}
+.detail_page h3::after {
+    content: '';
+    display: block;
+    margin: 12px auto;
+    width: 5%;
+    border-bottom: solid 3px var(--color-pink);
+}
+.detail_page h2 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+}
+.detail_page p {
+    margin: 68px auto 32px;
+    color: #5E5E5E;
+    width: 555px;
+}
+.detail_price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-pink);
+}
+.detail_price::after {
+    content: '';
+    display: block;
+    width: 56.4%;
+    margin: 65px auto;
+    border-bottom: 1px solid #EAEAEA;
+}
+.detail_props {
+    display: flex;
+    justify-content: center;
+}
+.detail_props div.catalog_controls {
+    margin: 0 0 48px 0;
+}
+.prod_button div.img_wrap {
+    position: static;
+}
+.detail_button a {
+    display: inline-block;
+    border: 1px solid var(--color-pink);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-pink);
+    padding: 14px 56px 14px 72px;
+    margin-bottom: 65px;
+    background-image: url('../img/cart_pink.png');
+    background-position: 24px 14px;
+    background-size: auto;
+    transition: color .5s, background-color .5s, background-image .5s;
+}
+.detail_button a:hover {
+    background: var(--color-pink);
+    border: 1px solid #FF6A6A;
+    color: #fff;
+    background-image: url('../img/cart.svg');
+    background-repeat: no-repeat;
+    background-position: 24px 14px;
+    background-size: 13%;
 }
