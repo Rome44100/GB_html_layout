@@ -774,3 +774,132 @@ summary
     margin-bottom: 128px
 
 /*** CART ***/
+.page_basket
+    display: flex
+    justify-content: space-between
+    margin-top: 96px
+    margin-bottom: 128px
+
+.basket_order
+    max-width: 360px
+
+.cart_item
+    display: flex
+    margin-bottom: 40px
+    box-shadow: 5px 10px 15px #9F9F9F
+
+    &:last-child
+        margin-bottom: 72px
+
+    & .cart_item_desc
+        padding: 22px 31px
+        width: 390px
+
+.cart_item_img
+    display: flex
+    align-items: flex-start
+
+.cart_item_title
+    display: flex
+    gap: 30px
+    justify-content: space-between
+
+.cart_item_title h4 a
+    text-transform: uppercase
+    font-size: 24px
+    line-height: 29px
+    color: #222222
+
+.cart_item_props
+    margin-top: 42px
+    font-size: 22px
+    line-height: 26px
+    color: #575757
+
+    & div
+        margin-bottom: 6px
+
+.cart_item_price span
+    color: $color-main
+
+.cart_item_prop_quantity input
+    border: 1px solid #EAEAEA
+    width: 43px
+    padding: 2px 16px 0
+    margin-left: 24px
+    position: relative
+    top: -3px
+
+.basket_content_buttons form
+    display: flex
+    justify-content: space-between
+
+.basket_content_buttons input,
+.basket_content_buttons a
+    border: 1px solid #A4A4A4
+    text-transform: uppercase
+    padding: 16px 40px
+    display: inline-block
+    cursor: pointer
+
+.shipping_address h4
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+    text-transform: uppercase
+    margin-bottom: 20px
+
+.shipping_address input
+    width: 100%
+    border: 1px solid #A4A4A4
+    padding: 13px 17px
+    margin-bottom: 20px
+
+    &:last-child
+        margin-bottom: 23px
+
+.shipping_address input[type="submit"]
+    width: auto
+    padding: 10px 16px
+    cursor: pointer
+
+.basket_proceed
+    margin-top: 58px
+    padding: 39px 44px 42px
+    background: #F5F3F3
+
+    & div span
+        padding-left: 20px
+
+    & input[type="submit"]
+        margin-top: 17px
+        width: 100%
+        background-color: #F16D7F
+        padding: 15px 41px
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        cursor: pointer
+
+.basket_subtotal
+    font-size: 11px
+    line-height: 13px
+    color: #4A4A4A
+    text-align: right
+    margin-bottom: 12px
+
+.basket_grandtotal
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+    text-align: right
+
+    & span
+        color: $color-main
+
+    &::after
+        content: ''
+        display: inline-block
+        width: 100%
+        border-bottom: solid 1px #E2E2E2
+        margin-top: 21px

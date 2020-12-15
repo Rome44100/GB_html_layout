@@ -94,29 +94,45 @@
     <main>
         <div class="page_title_block center">
             <div class="ptb_headign">
-                <h1>New arrivals</h1>
+                <h1>Shopping cart</h1>
             </div>
         </div>
         <div class="page_basket center">
             <div class="basket_content">
                 <div class="basket_content_list">
-                    <section class="product">
-                        <div class="img_wrap">
-                            <a class="product_img" href="product.html"><img src="img/goods_1.png" alt="ELLERY X M'O capsule"></a>
-                            <a class="bg_cart" href="#300">Add to cart</a>
+                    <section class="cart_item">
+                        <div class="cart_item_img">
+                            <img src="img/cart_img_1.jpg" alt="ELLERY X M'O capsule">
                         </div>
-                        <h4><a href="#0">ELLERY X M'O capsule</a></h4>
-                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <div class="product_price"><span>$</span>52.00</div>
+                        <div class="cart_item_desc">
+                            <div class="cart_item_title">
+                                <h4><a href="product.html">Mango people t-shirt Mango people t-shirt Mango people t-shirt Mango people t-shirt Mango people t-shirt</a></h4>
+                                <span><a href="#0"><img src="img/close_cross.png" alt="Delete item"></a></span>
+                            </div>
+                            <div class="cart_item_props">
+                                <div class="cart_item_price">Price:&nbsp;<span>$</span><span>52.00</span></div>
+                                <div class="cart_item_prop_color">Color:&nbsp;Red</div>
+                                <div class="cart_item_prop_size">Size:&nbsp;XL</div>
+                                <div class="cart_item_prop_quantity">Quantity:&nbsp;<input type="text" name="quantity" value="1"></div>
+                            </div>
+                        </div>
                     </section>
-                    <section class="product">
-                        <div class="img_wrap">
-                            <a class="product_img" href="product.html"><img src="img/goods_1.png" alt="ELLERY X M'O capsule"></a>
-                            <a class="bg_cart" href="#300">Add to cart</a>
+                    <section class="cart_item">
+                        <div class="cart_item_img">
+                            <img src="img/cart_img_2.jpg" alt="ELLERY X M'O capsule">
                         </div>
-                        <h4><a href="#0">ELLERY X M'O capsule</a></h4>
-                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <div class="product_price"><span>$</span>52.00</div>
+                        <div class="cart_item_desc">
+                            <div class="cart_item_title">
+                                <h4><a href="product.html">Mango people t-shirt</a></h4>
+                                <span><a href="#0"><img src="img/close_cross.png" alt="Delete item"></a></span>
+                            </div>
+                            <div class="cart_item_props">
+                                <div class="cart_item_price">Price:&nbsp;<span>$</span><span>52.00</span></div>
+                                <div class="cart_item_prop_color">Color:&nbsp;Red</div>
+                                <div class="cart_item_prop_size">Size:&nbsp;XL</div>
+                                <div class="cart_item_prop_quantity">Quantity:&nbsp;<input type="text" name="quantity" value="2"></div>
+                            </div>
+                        </div>
                     </section>
                 </div>
                 <div class="basket_content_buttons">
@@ -127,7 +143,8 @@
                 </div>
             </div>
             <div class="basket_order">
-                <div class="shipping_adress">
+                <div class="shipping_address">
+                    <h4>Shipping address</h4>
                     <form action="/cart.html" method="POST">
                         <input type="text" placeholder="Bangladesh">
                         <input type="text" placeholder="State">
@@ -136,8 +153,8 @@
                     </form>
                 </div>
                 <div class="basket_proceed">
-                    <div>SUB TOTAL <span>$900</span></div>
-                    <div>Grand total <span>$900</span></div>
+                    <div class="basket_subtotal">Sub total<span>&nbsp;$900</span></div>
+                    <div class="basket_grandtotal">Grand total<span>&nbsp;$900</span></div>
                     <input type="submit" value="Proceed to checkout">
                 </div>
             </div>
