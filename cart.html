@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My shop - Catalog - New arrivals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+</head>
+<body>
+<div>
+    <header>
+        <div class="top_bar center">
+            <div class="top_left_items">
+                <div class="logo_wrap">
+                    <a href="index.html"><img src="img/logo.svg" alt="Logo shop"></a>
+                </div>
+                <div class="search_wrap">
+                    <form action="/" method="GET">
+                        <div id="search_display" title="Press ME!">
+                            <img src="img/search.svg" alt="Search">
+                        </div>
+                        <div id="search_elems">
+                            <input class="text_field" type="text" name="s" required placeholder="Enter your question">
+                            <input class="submit_button" type="submit" value="Go!">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="top_rigth_items">
+                <div class="menu_wrap">
+                    <img class="button_menu" src="img/menu.svg" alt="menu">
+                    <nav class="main_menu">
+                        <div>Menu</div>
+                        <span class="close_menu"></span>
+                        <ul>
+                            <li><a href="catalog.html">Man</a>
+                                <ul>
+                                    <li><a href="catalog.html">Accessories</a></li>
+                                    <li><a href="catalog.html">Bags</a></li>
+                                    <li><a href="catalog.html">Denim</a></li>
+                                    <li><a href="catalog.html">T-shirts</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="catalog.html">Woman</a>
+                                <ul>
+                                    <li><a href="catalog.html">Accessories</a></li>
+                                    <li><a href="catalog.html">Jackets & Coats</a></li>
+                                    <li><a href="catalog.html">Polos</a></li>
+                                    <li><a href="catalog.html">T-shirts</a></li>
+                                    <li><a href="catalog.html">Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="catalog.html">Kids</a>
+                                <ul>
+                                    <li><a href="catalog.html">Accessories</a></li>
+                                    <li><a href="catalog.html">Jackets & Coats</a></li>
+                                    <li><a href="catalog.html">Polos</a></li>
+                                    <li><a href="catalog.html">T-shirts</a></li>
+                                    <li><a href="catalog.html">Shirts</a></li>
+                                    <li><a href="catalog.html">Bags</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="cabinet_wrap">
+                    <img class="header__account" src="img/account.svg" alt="account">
+                    <div class="access_form_wrap">
+                        <form action="/" method="POST">
+                            <label>
+                                <input type="text" name="login" placeholder="Login">
+                            </label>
+                            <label>
+                                <input type="password" name="pass" placeholder="Password">
+                            </label>
+                            <label>
+                                <input class="globe_button" type="submit" value="Login">
+                            </label>
+                            <div class="register">
+                                <a href="#0">Forgot password</a> / 
+                                <a href="#0">Registration</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="basket_wrap">
+                    <a href="catalog.html"><img src="img/cart.svg" alt="Basket"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="page_title_block center">
+            <div class="ptb_headign">
+                <h1>Shopping cart</h1>
+            </div>
+        </div>
+        <div class="page_basket center">
+            <div class="basket_content">
+                <div class="basket_content_list">
+                    <section class="cart_item">
+                        <div class="cart_item_img">
+                            <img src="img/cart_img_1.jpg" alt="ELLERY X M'O capsule">
+                        </div>
+                        <div class="cart_item_desc">
+                            <div class="cart_item_title">
+                                <h4><a href="product.html">Mango people t-shirt Mango people t-shirt Mango people t-shirt Mango people t-shirt Mango people t-shirt</a></h4>
+                                <span><a href="#0"><img src="img/close_cross.png" alt="Delete item"></a></span>
+                            </div>
+                            <div class="cart_item_props">
+                                <div class="cart_item_price">Price:&nbsp;<span>$</span><span>52.00</span></div>
+                                <div class="cart_item_prop_color">Color:&nbsp;Red</div>
+                                <div class="cart_item_prop_size">Size:&nbsp;XL</div>
+                                <div class="cart_item_prop_quantity">Quantity:&nbsp;<input type="text" name="quantity" value="1"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="cart_item">
+                        <div class="cart_item_img">
+                            <img src="img/cart_img_2.jpg" alt="ELLERY X M'O capsule">
+                        </div>
+                        <div class="cart_item_desc">
+                            <div class="cart_item_title">
+                                <h4><a href="product.html">Mango people t-shirt</a></h4>
+                                <span><a href="#0"><img src="img/close_cross.png" alt="Delete item"></a></span>
+                            </div>
+                            <div class="cart_item_props">
+                                <div class="cart_item_price">Price:&nbsp;<span>$</span><span>52.00</span></div>
+                                <div class="cart_item_prop_color">Color:&nbsp;Red</div>
+                                <div class="cart_item_prop_size">Size:&nbsp;XL</div>
+                                <div class="cart_item_prop_quantity">Quantity:&nbsp;<input type="text" name="quantity" value="2"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="basket_content_buttons">
+                    <form action="/cart.html" method="POST">
+                        <input type="submit" value="clear shopping cart">
+                        <a href="#0">continue shopping</a>
+                    </form>
+                </div>
+            </div>
+            <div class="basket_order">
+                <div class="shipping_address">
+                    <h4>Shipping address</h4>
+                    <form action="/cart.html" method="POST">
+                        <input type="text" placeholder="Bangladesh">
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="Postcode / Zip">
+                        <input type="submit" value="Get a quote">
+                    </form>
+                </div>
+                <div class="basket_proceed">
+                    <div class="basket_subtotal">Sub total<span>&nbsp;$900</span></div>
+                    <div class="basket_grandtotal">Grand total<span>&nbsp;$900</span></div>
+                    <input type="submit" value="Proceed to checkout">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot_subscribe center">
+            <div class="feedback">
+                <img src="img/feedback_face.png" alt="">
+                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+            </div>
+            <div class="subscribe_form">
+                <h3>Subscribe</h3>
+                <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                <form action="/" method="POST">
+                    <input class="text_field" type="email" name="email" placeholder="Enter your email" required>
+                    <input class="submit_button" type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+        <div class="foot_bar center">
+            <div class="copy">© 2021  Brand  All Rights Reserved.</div>
+            <div class="social">
+                <a class="facebook" href="#0"><img src="img/facebook.png" alt="facebook"></a>
+                <a class="instagram" href="#0"><img src="img/instagram_black.png" alt="instagram"></a>
+                <a class="pinterest" href="#0"><img src="img/pinterest.png" alt="pinterest"></a>
+                <a class="twitter" href="#0"><img src="img/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+window.addEventListener('load', function() {
+    ShowElems('#search_display', '#search_elems', 1);
+    ShowElems('.button_menu', '.main_menu', 1);
+    ShowElems('.header__account', '.access_form_wrap', 1);
+});
+</script>
+</body>
+</html>
