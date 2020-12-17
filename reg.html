@@ -94,69 +94,42 @@
     <main>
         <div class="page_title_block center">
             <div class="ptb_headign">
-                <h1>Shopping cart</h1>
+                <h1>Registration</h1>
             </div>
         </div>
-        <div class="page_basket center">
-            <div class="basket_content">
-                <div class="basket_content_list">
-                    <section class="cart_item">
-                        <div class="cart_item_img">
-                            <img src="img/cart_img_1.jpg" alt="ELLERY X M'O capsule">
-                        </div>
-                        <div class="cart_item_desc">
-                            <div class="cart_item_title">
-                                <h4><a href="product.html">Mango people t-shirt Mango people t-shirt Mango people t-shirt Mango people t-shirt Mango people t-shirt</a></h4>
-                                <span><a href="#0"><img src="img/close_cross.png" alt="Delete item"></a></span>
-                            </div>
-                            <div class="cart_item_props">
-                                <div class="cart_item_price">Price:&nbsp;<span>$</span><span>52.00</span></div>
-                                <div class="cart_item_prop_color">Color:&nbsp;Red</div>
-                                <div class="cart_item_prop_size">Size:&nbsp;XL</div>
-                                <div class="cart_item_prop_quantity">Quantity:&nbsp;<input type="text" name="quantity" value="1"></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cart_item">
-                        <div class="cart_item_img">
-                            <img src="img/cart_img_2.jpg" alt="ELLERY X M'O capsule">
-                        </div>
-                        <div class="cart_item_desc">
-                            <div class="cart_item_title">
-                                <h4><a href="product.html">Mango people t-shirt</a></h4>
-                                <span><a href="#0"><img src="img/close_cross.png" alt="Delete item"></a></span>
-                            </div>
-                            <div class="cart_item_props">
-                                <div class="cart_item_price">Price:&nbsp;<span>$</span><span>52.00</span></div>
-                                <div class="cart_item_prop_color">Color:&nbsp;Red</div>
-                                <div class="cart_item_prop_size">Size:&nbsp;XL</div>
-                                <div class="cart_item_prop_quantity">Quantity:&nbsp;<input type="text" name="quantity" value="2"></div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="basket_content_buttons">
-                    <form action="/cart.html" method="POST">
-                        <input type="submit" value="clear shopping cart">
-                        <a href="#0">continue shopping</a>
-                    </form>
-                </div>
+        <div class="pagereg center">
+            <div class="pagereg__form">
+                <form action="reg.html" method="POST">
+                    <p>Your name</p>
+                    <input type="text" name="first_name" placeholder="First name">
+                    <input type="text" name="second_name" placeholder="Second name">
+                    <div class="pagereg__radio">
+                        <label>
+                            <input type="radio" name="sex" value="male">
+                            Male
+                        </label>
+                        <label>
+                            <input type="radio" name="sex">
+                            Female
+                        </label>
+                    </div>
+                    <p>Login details</p>
+                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="password" name="pwd" placeholder="Password">
+                    <p class="hint">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    <button type="submit">Join&nbsp;now&nbsp;<span>&rarr;</span></button>
+                </form>
             </div>
-            <div class="basket_order">
-                <div class="shipping_address">
-                    <h4>Shipping address</h4>
-                    <form action="/cart.html" method="POST">
-                        <input type="text" placeholder="Bangladesh">
-                        <input type="text" placeholder="State">
-                        <input type="text" placeholder="Postcode / Zip">
-                        <input type="submit" value="Get a quote">
-                    </form>
-                </div>
-                <div class="basket_proceed">
-                    <div class="basket_subtotal">Sub total<span>&nbsp;$900</span></div>
-                    <div class="basket_grandtotal">Grand total<span>&nbsp;$900</span></div>
-                    <input type="submit" value="Proceed to checkout">
-                </div>
+            <div class="regdesc">
+                <h2>Loyalty has its perks</h2>
+                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                <ul>
+                    <li>15% off welcome offer</li>
+                    <li>Free shipping, returns and exchanges on all orders</li>
+                    <li>$10 off a purchase on your birthday</li>
+                    <li>Early access to products</li>
+                    <li>Exclusive offers & rewards</li>
+                </ul>
             </div>
         </div>
     </main>
