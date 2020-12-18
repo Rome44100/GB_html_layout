@@ -437,15 +437,15 @@ summary {
 .product img {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
-  -webkit-transition: -webkit-filter 1s;
-  transition: -webkit-filter 1s;
-  transition: filter 1s;
-  transition: filter 1s, -webkit-filter 1s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .product:hover img {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .bg_cart {
@@ -1129,6 +1129,7 @@ summary {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  margin-bottom: 34px;
 }
 
 .pagereg__form form {
@@ -1165,25 +1166,26 @@ summary {
 .pagereg__form button {
   display: inline-block;
   border: 1px solid #F16D7F;
-  color: #F16D7F;
+  color: #fff;
   padding: 16px 30px;
   margin-bottom: 65px;
-  -webkit-transition: color .5s, background-color .5s, background-image .5s;
-  transition: color .5s, background-color .5s, background-image .5s;
+  margin-top: 39px;
+  -webkit-transition: color .5s, background-color .5s;
+  transition: color .5s, background-color .5s;
   cursor: pointer;
   width: 167px;
   text-transform: uppercase;
-  background-color: #fff;
-}
-
-.pagereg__form button span {
-  padding-left: 10px;
+  background-color: #F16D7F;
 }
 
 .pagereg__form button:hover {
   background: #F16D7F;
-  border: 1px solid #FF6A6A;
-  color: #fff;
+  border: 1px solid #E05C6E;
+  background-color: #E05C6E;
+}
+
+.pagereg__form button span {
+  padding-left: 10px;
 }
 
 .regdesc h2 {
@@ -1251,7 +1253,8 @@ summary {
   height: 448px;
 }
 
-.feedback, .subscribe_form {
+.feedback,
+.subscribe_form {
   max-width: 360px;
   text-align: center;
 }
@@ -1262,6 +1265,16 @@ summary {
   text-align: center;
   color: #222224;
   margin-top: 30px;
+}
+
+.feedback img {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.feedback img:hover {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
 }
 
 .subscribe_form h3 {

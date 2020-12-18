@@ -168,7 +168,8 @@
     background-position: center bottom
     height: 448px
 
-.feedback, .subscribe_form
+.feedback,
+.subscribe_form
     max-width: 360px
     text-align: center
 
@@ -178,6 +179,11 @@
     text-align: center
     color: #222224
     margin-top: 30px
+
+.feedback img
+    transition: all .5s ease-in-out
+    &:hover
+        transform: rotateZ(360deg)
 
 .subscribe_form h3
     font-size: 24px
