@@ -1,0 +1,249 @@
+@import preset
+
+/***** HEADER ******/
+.top_bar
+    background-color: #222
+    height: 75px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 41px
+
+.top_left_items, .top_rigth_items
+    display: flex
+    gap: 41px
+    align-items: center
+
+.search_wrap form
+    display: flex
+    width: 100%
+    align-items: center
+
+.search_wrap div
+    background-color: transparent
+    border: none
+    cursor: pointer
+    margin-right: 30px
+
+#search_elems
+    display: flex
+    opacity: 0
+    visibility: hidden
+    transition: all 1s
+
+.text_field
+    display: block
+    padding: 0 12px
+    background-color: #E1E1E1
+    border: none
+    height: 49px
+    border-top-left-radius: 25px
+    border-bottom-left-radius: 25px
+    padding-left: 25px
+    width: 428px
+
+.submit_button
+    background-color: $color-main
+    color: #fff
+    height: 49px
+    border: none
+    width: 100px
+    border-top-right-radius: 25px
+    border-bottom-right-radius: 25px
+    cursor: pointer
+
+.menu_wrap
+    position: relative
+
+.button_menu
+    cursor: pointer
+
+.main_menu
+    display: block
+    background-color: #fff
+    width: 232px
+    position: absolute
+    top: 51px
+    left: -53px
+    padding: 33px
+    z-index: 100
+    opacity: 0
+    visibility: hidden
+    transition: all 1s
+
+    & div
+        font-weight: bold
+        color: #000
+
+    & li
+        list-style: none
+
+    & ul li
+        margin: 12px 0 20px
+
+    & a
+        color: $color-main
+
+    & ul li ul li
+        margin: 11px 0 11px 20px
+
+    & ul li ul a
+        color: #6F6E6E
+
+.header__account
+    cursor: pointer
+
+.cabinet_wrap
+    position: relative
+
+.access_form_wrap
+    display: block
+    position: absolute
+    right: -77px
+    background-color: #fff
+    top: 54px
+    z-index: 10
+    padding: 30px
+    width: 300px
+    opacity: 0
+    visibility: hidden
+    transition: all 1s
+
+.access_form_wrap input[type="text"],
+.access_form_wrap input[type="password"]
+    border: 1px solid #A4A4A4
+    padding: 12px
+    margin: 10px 0
+    width: 100%
+
+.access_form_wrap input[type="submit"]
+    width: 100%
+    margin-top: 10px
+    cursor: pointer
+
+.register
+    margin: 20px 0 0
+
+/******* / HEADER *******/
+
+@import index
+
+@import catalog
+
+@import product
+
+@import cart
+
+@import reg
+
+/** FOOOOTER **/
+.foot_services
+    margin-top: 95px
+    background-color: #222224
+    display: flex
+    text-align: center
+
+    & img
+        margin-top: 104px
+
+    & h3
+        font-size: 19.96px
+        line-height: 24px
+        color: #FBFBFB
+        margin-top: 28px
+
+    & p
+        font-weight: 300
+        text-align: center
+        color: #FBFBFB
+        margin-top: 16px
+        margin-bottom: 104px
+
+.foot_subscribe
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-image: url("../img/subscribe_bg.jpg")
+    background-size: cover
+    background-position: center bottom
+    height: 448px
+
+.feedback,
+.subscribe_form
+    max-width: 360px
+    text-align: center
+
+.feedback p
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+    color: #222224
+    margin-top: 30px
+
+.feedback img
+    transition: all .5s ease-in-out
+    &:hover
+        transform: rotateZ(360deg)
+
+.subscribe_form h3
+    font-size: 24px
+    line-height: 167.2%
+    color: #222224
+    text-transform: uppercase
+
+.subscribe_form p
+    text-transform: uppercase
+
+.subscribe_form form
+    margin-top: 32px
+    display: flex
+
+.subscribe_form input[type="email"]
+    width: 260px
+    padding-right: 16px
+
+.subscribe_form input[type="submit"]
+    width: 100px
+    transition: background-color 1s
+
+    &:hover
+        background-color: #E05C6E
+
+/** FOOT BAR **/
+.foot_bar
+    background-color: #222224
+    height: 79px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.copy
+    font-size: 16px
+    line-height: 19px
+    color: #FBFBFB
+
+.social
+    display: flex
+    gap: 7px
+
+    & a
+        display: inline-block
+        width: 31px
+        height: 32px
+        background-color: #fff
+        transition: background-color .5s
+        display: flex
+        justify-content: center
+        align-items: center
+
+    & a:hover
+        background-color: $color-main
+
+    & a:hover img
+        filter: invert(0%)
+        transition: filter .5s
+
+    & a:hover img
+        filter: invert(100%)
+
+/*** / MAIN ***/

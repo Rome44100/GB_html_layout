@@ -1,0 +1,149 @@
+/****** PRODUCT *******/
+.slider
+    max-width: 1600px
+    height: 777px
+    margin: 0 auto
+
+    &_list
+        overflow: hidden
+        position: relative
+        max-width: 1600px
+        height: 777px
+        text-align: center
+
+    &_img
+        position: absolute
+        left: calc(50% - 800px)
+        opacity: 0
+        z-index: -5
+        animation-duration: 10s
+        animation-iteration-count: infinite
+
+    &_img:nth-child(1)
+        animation-name: slidein1
+
+    &_img:nth-child(2)
+        animation-name: slidein2
+
+    &_img:nth-child(3)
+        animation-name: slidein3
+
+@keyframes slidein1
+    0%
+        opacity: 0
+    10%
+        opacity: 1
+    20%
+        opacity: 1
+    30%
+        opacity: 0
+    100%
+        opacity: 0
+
+@keyframes slidein2
+    0%
+        opacity: 0
+    30%
+        opacity: 0
+    40%
+        opacity: 1
+    50%
+        opacity: 1
+    60%
+        opacity: 0
+    100%
+        opacity: 0
+
+@keyframes slidein3
+    0%
+        opacity: 0
+    60%
+        opacity: 0
+    70%
+        opacity: 1
+    80%
+        opacity: 1
+    100%
+        opacity: 0
+
+.slider_img img
+    height: 100%
+
+.detail_page
+    text-align: center
+    border: 1px solid #EAEAEA
+    position: relative
+    top: -64px
+    background-color: #fff
+
+    & h3
+        color: $color-main
+        margin-top: 64px
+        text-transform: uppercase
+
+    & h3::after
+        content: ''
+        display: block
+        margin: 12px auto
+        width: 5%
+        border-bottom: solid 3px $color-main
+
+    & h2
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #4D4D4D
+        text-transform: uppercase
+
+    & p
+        margin: 68px auto 32px
+        color: #5E5E5E
+        width: 555px
+
+.detail_price
+    font-weight: 300
+    font-size: 24px
+    line-height: 29px
+    color: $color-main
+
+    &::after
+        content: ''
+        display: block
+        width: 56.4%
+        margin: 65px auto
+        border-bottom: 1px solid #EAEAEA
+
+.detail_props
+    display: flex
+    justify-content: center
+
+    & div.catalog_controls
+        margin: 0 0 48px 0
+
+.prod_button div.img_wrap
+    position: static
+
+.detail_button a
+    display: inline-block
+    border: 1px solid $color-main
+    font-size: 16px
+    line-height: 19px
+    color: $color-main
+    padding: 14px 56px 14px 72px
+    margin-bottom: 65px
+    background-image: url('../img/cart_pink.png')
+    background-position: 24px 14px
+    background-size: auto
+    transition: color .5s, background-color .5s, background-image .5s
+
+    &:hover
+        background: $color-main
+        border: 1px solid #FF6A6A
+        color: #fff
+        background-image: url('../img/cart.svg')
+        background-repeat: no-repeat
+        background-position: 24px 14px
+        background-size: 13%
+
+.mp_list_mb
+    margin-bottom: 128px
