@@ -44,6 +44,10 @@ a {
   color: #fff;
 }
 
+summary {
+  outline: none;
+}
+
 summary::marker, summary::-webkit-details-marker {
   display: none;
   list-style: none;
