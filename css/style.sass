@@ -40,7 +40,7 @@
     border-top-left-radius: 25px
     border-bottom-left-radius: 25px
     padding-left: 25px
-    width: 428px
+    max-width: 66%
 
 .submit_button
     background-color: $color-main
@@ -52,9 +52,6 @@
     border-bottom-right-radius: 25px
     cursor: pointer
 
-.menu_wrap
-    position: relative
-
 .button_menu
     cursor: pointer
 
@@ -63,13 +60,14 @@
     background-color: #fff
     width: 232px
     position: absolute
-    top: 51px
-    left: -53px
+    top: 75px
+    right: 15%
     padding: 33px
     z-index: 100
     opacity: 0
     visibility: hidden
     transition: all 1s
+    overflow: hidden
 
     & div
         font-weight: bold
@@ -93,15 +91,12 @@
 .header__account
     cursor: pointer
 
-.cabinet_wrap
-    position: relative
-
 .access_form_wrap
     display: block
-    position: absolute
-    right: -77px
     background-color: #fff
-    top: 54px
+    position: absolute
+    top: 75px
+    right: 10%
     z-index: 10
     padding: 30px
     width: 300px
@@ -142,6 +137,7 @@
     background-color: #222224
     display: flex
     text-align: center
+    gap: 32px
 
     & img
         margin-top: 104px
@@ -167,6 +163,7 @@
     background-size: cover
     background-position: center bottom
     height: 448px
+    gap: 32px
 
 .feedback,
 .subscribe_form
@@ -247,3 +244,5 @@
         filter: invert(100%)
 
 /*** / MAIN ***/
+
+@import adaptive
