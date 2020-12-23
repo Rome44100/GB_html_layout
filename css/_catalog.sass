@@ -1,0 +1,144 @@
+/*** CATALOG ***/
+.page_title_block
+    background: #F8F3F4
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.ptb_headign h1
+    padding: 60px 0
+    font-size: 24px
+    line-height: 29px
+    color: $color-main
+    text-transform: uppercase
+
+.ptm_navig a
+    font-weight: 300
+    color: #636363
+    text-transform: uppercase
+
+    &:hover
+        color: $color-main
+
+.last_chunk
+    text-transform: uppercase
+    font-weight: 600
+    color: $color-main
+
+.catalog_controls
+    margin-top: 51px
+    margin-bottom: 64px
+    text-align: left
+    display: flex
+    gap: 30px
+    color: #6F6E6E
+    text-transform: uppercase
+
+    & summary
+        list-style: none
+        color: #000
+        cursor: pointer
+
+.control_filter
+    width: 360px
+    position: relative
+
+.ctrl_first_lvl summary span
+    display: inline-block
+    background-image: url('../img/filter_list_style.svg')
+    width: 15px
+    height: 11px
+    margin-left: 12px
+
+.ctrl_first_lvl
+    position: absolute
+    top: -13px
+    padding: 13px 16px
+    z-index: 10
+    background-color: #fff
+    width: 360px
+
+    &[open]
+        box-shadow: 5px 10px 15px #9F9F9F
+
+    &[open] summary span
+        background-image: url('../img/filter_list_style_active.svg')
+
+    &[open] summary
+        color: $color-main
+        margin-bottom: 12px
+
+    &[open] summary:last-child
+        margin-bottom: 0
+
+.ctrl_second_lvl summary
+    border-left: solid 3px $color-main
+    border-bottom: 1px solid #EBEBEB
+    padding: 11px
+
+.ctrl_second_lvl ul
+    margin: 24px 0
+
+.ctrl_second_lvl li
+    list-style: none
+    margin: 0 0 11px 17px
+
+.control_addition
+    display: flex
+    gap: 48px
+    position: relative
+
+    & summary::after
+        content: ''
+        display: inline-block
+        width: 10px
+        height: 5px
+        background-image: url('../img/drop_down.svg')
+        position: relative
+        top: -2px
+        left: 10px
+
+    & ul
+        position: absolute
+        background-color: #fff
+        z-index: 10
+        box-shadow: 5px 10px 15px #9F9F9F
+        padding: 10px
+        top: 22px
+
+    & li
+        list-style: none
+        margin-bottom: 6px
+        white-space: nowrap
+
+    & li:last-child
+        margin-bottom: 0
+
+    & ul li input
+        border: 1px solid #EBEBEB
+        margin-right: 10px
+
+.pagination_wrap
+    display: inline-block
+
+.pagination
+    text-align: left
+    margin-top: 48px
+    border: 1px solid #EBEBEB
+    padding: 12px
+    display: flex
+    gap: 17px
+
+.left_arrow, .right_arrow
+    display: inline-block
+    width: 8px
+    height: 14px
+
+.left_arrow
+    background-image: url('../img/left_arrow.png')
+
+.right_arrow
+    background-image: url('../img/right_arrow.png')
+
+.active
+    color: $color-main
