@@ -53,6 +53,17 @@
         padding-top: 54px
         padding-bottom: 140px
 
+    /** CATALOG **/
+    .catalog_controls
+        justify-content: space-between
+        gap: 30px
+
+    .control_addition
+        padding-right: 24px
+
+        &  details:last-child ul
+            right: 0
+
 @media screen and (max-width: 734px)
     .cabinet_wrap,
     .basket_wrap,
@@ -78,3 +89,16 @@
 
     .one_offer img
         min-height: 111px
+
+    /** CATALOG **/
+    .ctrl_first_lvl > summary
+        visibility: hidden
+
+        & span
+            position: relative
+            left: -50px
+            width: 38px
+            height: 25px
+            visibility: visible
+            display: inline-block
+            background-size: contain

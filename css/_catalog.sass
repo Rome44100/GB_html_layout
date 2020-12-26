@@ -56,10 +56,11 @@
     padding: 13px 16px
     z-index: 10
     background-color: #fff
-    width: 360px
+    width: auto
 
     &[open]
         box-shadow: 5px 10px 15px #9F9F9F
+        width: 360px
 
     &[open] summary span
         background-image: url('../img/filter_list_style_active.svg')
@@ -87,6 +88,7 @@
     display: flex
     gap: 48px
     position: relative
+    white-space: nowrap
 
     & summary::after
         content: ''
