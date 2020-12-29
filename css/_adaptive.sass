@@ -64,9 +64,78 @@
         &  details:last-child ul
             right: 0
 
-@media screen and (max-width: 734px)
-    .cabinet_wrap,
-    .basket_wrap,
+    .mp_list
+        gap: 16px
+
+    .mp_list section
+        max-width: 344px
+
+    .product img
+        max-width: 344px
+
+    .detail_wrap
+        padding: 0
+
+    .detail_page
+        top: 0
+
+    .detail_price::after
+        width: 86.9%
+
+    .page_basket
+        flex-direction: column
+
+    .basket_content_buttons form
+        justify-content: space-around
+
+    .basket_order
+        margin-top: 64px
+        max-width: 100%
+        display: flex
+        gap: 14px
+
+    .shipping_address,
+    .basket_proceed
+        width: 360px
+
+    .basket_proceed
+        margin-top: 39px
+        height: 214px
+
+    .pagereg
+        gap: 22px
+
+    .regdesc h2,
+    .regdesc p,
+    .regdesc li
+        font-size: 16px
+        line-height: 19px
+
+@media screen and (max-width: 739px)
+    .top_bar
+        overflow: visible
+
+    #search_elems
+        position: relative
+        top: 70px
+        left: -136px
+
+    .top_rigth_items
+        gap: 20px
+
+    .access_form_wrap
+        right: 0
+        z-index: 30
+        width: 100%
+
+    .main_menu
+        right: 0
+        width: 100%
+
+    .page_title_block
+        flex-direction: column
+        justify-content: space-around
+
     .banner_left
         display: none
 
@@ -90,15 +159,115 @@
     .one_offer img
         min-height: 111px
 
-    /** CATALOG **/
+    .control_addition summary
+        font-size: 12px
+        line-height: 14px
+
+    .ctrl_first_lvl
+        padding: 13px 0
+
+    .ctrl_first_lvl[open]
+        width: 328px
+
     .ctrl_first_lvl > summary
         visibility: hidden
+        width: 38px
 
         & span
             position: relative
-            left: -50px
             width: 38px
             height: 25px
             visibility: visible
             display: inline-block
             background-size: contain
+            top: -20px
+
+    .control_addition
+        gap: 24px
+
+    .subscribe_form input[type="email"]
+        margin-left: 10px
+
+    .foot_bar
+        height: 144px
+        flex-direction: column-reverse
+        justify-content: center
+
+    .social
+        margin-top: 44px
+    .copy
+        margin-top: 24px
+
+    .detail_wrap
+        overflow: visible
+
+    .detail_page h3::after
+        width: 18%
+
+    .detail_page p
+        width: 326px
+
+    .detail_props .control_addition
+        overflow: visible
+
+    .detail_props .control_addition summary
+        font-size: 10px
+        line-height: 12px
+
+    .cart_item_img img
+        width: 142px
+
+    .cart_item_title h4 a
+        font-size: 16px
+        line-height: 19px
+
+    .cart_item .cart_item_desc
+        padding: 13px 17px
+
+    .cart_item_props
+        font-size: 14px
+        line-height: 17px
+        margin-top: 25px
+
+    .cart_item_prop_quantity input
+        top: -1px
+
+    .cart_item:last-child
+        margin-bottom: 30px
+
+    .page_basket
+        padding: 0 8px
+
+    .basket_content_buttons form
+        justify-content: space-between
+
+    .basket_content_buttons input,
+    .basket_content_buttons a
+        font-size: 12px
+        line-height: 14px
+        padding: 6px 12px
+
+    .basket_order
+        flex-direction: column
+
+    .shipping_address,
+    .basket_proceed
+        width: 344px
+
+    .pagereg
+        padding: 0 8px
+        gap: 22px
+        flex-direction: column
+        margin: 40px 0
+
+    .pagereg__form form
+        width: 344px
+
+    .pagereg__radio
+        height: 16px
+
+    .pagereg__form p
+        margin: 0
+
+    .pagereg__form button
+        margin-bottom: 40px
