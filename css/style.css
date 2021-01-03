@@ -22,6 +22,10 @@ a {
   color: #5D5D5D;
 }
 
+main {
+  min-height: 84.6vh;
+}
+
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
