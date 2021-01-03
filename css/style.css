@@ -285,6 +285,7 @@ summary {
   font-weight: 900;
   color: #222;
   font-size: 23px;
+  line-height: 20px;
 }
 
 .promo_content p span {
@@ -342,11 +343,13 @@ summary {
   line-height: 19px;
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .numerous_offers h3, .numerous_offers .one_offer h3 {
   color: #F16D7F;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .one_offer {
@@ -867,6 +870,7 @@ summary {
   color: #F16D7F;
   margin-top: 64px;
   text-transform: uppercase;
+  padding: 0 20px;
 }
 
 .detail_page h3::after {
@@ -883,6 +887,7 @@ summary {
   line-height: 22px;
   color: #4D4D4D;
   text-transform: uppercase;
+  padding: 0 20px;
 }
 
 .detail_page p {
@@ -1231,6 +1236,10 @@ summary {
   gap: 32px;
 }
 
+.foot_services section {
+  max-width: 360px;
+}
+
 .foot_services img {
   margin-top: 104px;
 }
@@ -1263,7 +1272,7 @@ summary {
   background-image: url("../img/subscribe_bg.jpg");
   background-size: cover;
   background-position: center bottom;
-  height: 448px;
+  min-height: 448px;
   gap: 32px;
 }
 
@@ -1271,6 +1280,7 @@ summary {
 .subscribe_form {
   max-width: 360px;
   text-align: center;
+  padding: 20px 0;
 }
 
 .feedback p {
@@ -1327,7 +1337,7 @@ summary {
 /** FOOT BAR **/
 .foot_bar {
   background-color: #222224;
-  height: 79px;
+  min-height: 79px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1343,6 +1353,7 @@ summary {
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
+  padding: 10px;
 }
 
 .social {
@@ -1442,6 +1453,7 @@ summary {
   }
   .foot_services p {
     margin-bottom: 16px;
+    padding: 0 8px;
   }
   .foot_subscribe {
     -webkit-box-orient: vertical;
@@ -1450,6 +1462,9 @@ summary {
             flex-direction: column;
     padding-top: 54px;
     padding-bottom: 140px;
+  }
+  .subscribe_form p {
+    padding: 0 8px;
   }
   /** CATALOG **/
   .catalog_controls {
@@ -1604,7 +1619,7 @@ summary {
     margin-left: 10px;
   }
   .foot_bar {
-    height: 144px;
+    min-height: 144px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;

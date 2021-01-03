@@ -139,6 +139,9 @@
     text-align: center
     gap: 32px
 
+    & section
+        max-width: 360px
+
     & img
         margin-top: 104px
 
@@ -162,13 +165,14 @@
     background-image: url("../img/subscribe_bg.jpg")
     background-size: cover
     background-position: center bottom
-    height: 448px
+    min-height: 448px
     gap: 32px
 
 .feedback,
 .subscribe_form
     max-width: 360px
     text-align: center
+    padding: 20px 0
 
 .feedback p
     font-size: 20px
@@ -209,7 +213,7 @@
 /** FOOT BAR **/
 .foot_bar
     background-color: #222224
-    height: 79px
+    min-height: 79px
     display: flex
     justify-content: space-between
     align-items: center
@@ -218,6 +222,7 @@
     font-size: 16px
     line-height: 19px
     color: #FBFBFB
+    padding: 10px
 
 .social
     display: flex
